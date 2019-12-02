@@ -46,11 +46,11 @@ public class SearchPage extends AbstractPage {
             By locator
     ) {
 
-        for (int i = 1; i < searchResultsList.size(); i++) {
+        for (int index = 1; index < searchResultsList.size(); index++) {
 
             boolean isEverySearchResultsElementContainingLocator = getSearchResultsListWebElementOfIndex(
                     locator,
-                    i)
+                    index)
                     .isDisplayed();
 
             if(!isEverySearchResultsElementContainingLocator) {
